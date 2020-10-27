@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<h1>Lista prueba template</h1>
+
+
+<!-- Ejemplo de cómo interpolar el contenido de la database en Django: -->
+{% for elemento in lista %}
+    <p>cantidad: {{elemento.cantidad}} - Titulo: {{elemento.titulo}} - Subtitulo: {{elemento.subtitulo}} </p>
+{% endfor %}
