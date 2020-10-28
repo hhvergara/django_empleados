@@ -17,8 +17,15 @@ ALLOWED_HOSTS = []
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR.child('db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbempleados',
+        'USER' : 'hector',
+        'PASSWORD' : 'hector01',
+        'HOST' : '172.18.0.2',
+        'PORT': '5432'
+
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR.child('db.sqlite3'),
     }
 }
 # Static files (CSS, JavaScript, Images)
