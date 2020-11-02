@@ -2,10 +2,13 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from empleados.settings import init
 
 
 def main():
     """Run administrative tasks."""
+    # Inicializamos la base de datos en docker
+    init.docker_init()
     # remplazamos el path del archivo de setings por el local.
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'empleados.settings.local')
     try:

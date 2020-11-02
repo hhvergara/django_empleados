@@ -1,4 +1,5 @@
 from .base import *
+from empleados.settings import init
 
 DEBUG = True
 
@@ -17,11 +18,17 @@ ALLOWED_HOSTS = []
 # }
 DATABASES = {
     'default': {
+
+        # Base de datos Postgres de docker en ubuntu:
+        # Docker pull:
+        # docker pull hhvergara/postgres_adminer_1
+        # docker pull hhvergara/postgres_db_1
+
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dbempleados',
         'USER' : 'hector',
         'PASSWORD' : 'hector01',
-        'HOST' : '172.18.0.2',
+        'HOST':'localhost',
         'PORT': '5432'
 
         # 'ENGINE': 'django.db.backends.sqlite3',
