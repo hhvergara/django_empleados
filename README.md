@@ -25,3 +25,13 @@ Para crear un super usuario:
 $ ```python manage.py createsuperuser```
 
 En este ejemplo: user: hector, mail hvergara@inove.com.ar, pass: hector01
+
+
+#Docker compose
+
+Dentro del archivo 'stack.yml' se encuentra el archivo para correr el container de la base de datos Postgres utilizada en el proyecto,
+dentro del mismo, se encuentran las instrucciónes para correrlo, pero para poder hacer el build, tenemos que correr el comando:
+
+```docker-compose -f stack.yml up```
+
+De esta manera tendremos montada nuestra base de datos Postgre en nuestro sistema, la cual tiene su administrador 'adminer' en la dirección localhost:8080

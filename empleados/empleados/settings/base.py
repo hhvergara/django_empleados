@@ -23,6 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # APPs de terceros:
+    'ckeditor', # pip install django-ckeditor --> editor de texto de campo
     # local APPs:
     'applications.departamento',
     'applications.persona',

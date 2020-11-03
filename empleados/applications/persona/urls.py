@@ -1,11 +1,10 @@
 from django.contrib import admin
 from django.urls import path
 
-
-def funcion(self):
-    '''Funcion creada para que no produzca una excepción'''
-    pass
+from . import views
 
 urlpatterns = [
-    path('persona/', funcion)
+    path('listar-todo-empleados/', views.ListAllEmpleados.as_view()),
+    path('lista-by-area/', views.ListByArea.as_view())
+ 
 ]
