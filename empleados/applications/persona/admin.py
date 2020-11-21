@@ -9,7 +9,7 @@ admin.site.register(Habilidades)
 
 class EmpleadosAdmin(admin.ModelAdmin):
     list_display = (
-        'first_name', 'last_name', 'departamento', 'job', 'full_name'
+        'id', 'first_name', 'last_name', 'departamento', 'job', 'full_name'
     )
     # Como full_name no está declarado en mi model, lo agregamos aquí,
     # Corresponde a una nueva columna en el administrador de django->persona

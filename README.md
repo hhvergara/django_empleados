@@ -35,3 +35,8 @@ dentro del mismo, se encuentran las instrucciónes para correrlo, pero para pode
 ```docker-compose -f stack.yml up```
 
 De esta manera tendremos montada nuestra base de datos Postgre en nuestro sistema, la cual tiene su administrador 'adminer' en la dirección localhost:8080
+
+
+#Links útiles:
+- Sobre vistas genéricas: https://ccbv.co.uk/
+- Editor para campos de admin: pip install django-ckeditor (https://pypi.org/project/django-ckeditor/)
